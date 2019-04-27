@@ -37,10 +37,6 @@
     {
       "type": "Html",
       "extension": ".html"
-    },
-    {
-      "type": "Html",
-      "extension": ".print.html"
     }
   ]
 }
