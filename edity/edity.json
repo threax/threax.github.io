@@ -4,7 +4,7 @@
     "siteTitle": "Threax Software"
   },
   "contentMap": {
-    
+
   },
   "editComponents": [
     "editComponents/save.html",
@@ -37,6 +37,27 @@
     {
       "type": "Html",
       "extension": ".html"
+    }
+  ],
+  "preBuildTasks": [
+    {
+      "name": "GetPublishRepo",
+      "settings": {
+        "url": "https://github.com/threax/threax.github.io.git"
+      }
+    }
+  ],
+  "postBuildTasks": [
+    {
+      "name": "AddGithubCname",
+      "settings": {
+        "host": "www.threax.com"
+      }
+    }
+  ],
+  "postPublishTasks": [
+    {
+      "name" : "PublishToGitRepo"
     }
   ]
 }
