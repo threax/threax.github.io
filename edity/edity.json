@@ -1,38 +1,11 @@
 ﻿{
-  "$schema": "../../../SchemaGenerator/Schema/EdityProject.json",
+  "$schema": "https://www.threax.com/EdityMcEditface/edityschema.json",
   "vars": {
     "siteTitle": "Threax Software"
   },
   "contentMap": {
 
   },
-  "editComponents": [
-    "editComponents/save.html",
-    "editComponents/commit.html",
-    "editComponents/merge.html",
-    "editComponents/diff.html",
-    "editComponents/sync.html",
-    "editComponents/settings.html",
-    "editComponents/source.html",
-    "editComponents/media.html",
-    "editComponents/history.html",
-    "editComponents/edittreemenu.html",
-    "editComponents/phase.html",
-    "editComponents/draft.html",
-    "editComponents/compile.html",
-    "editComponents/branch.html"
-  ],
-  "draftComponents": [
-    "editComponents/commit.html",
-    "editComponents/merge.html",
-    "editComponents/diff.html",
-    "editComponents/sync.html",
-    "editComponents/history.html",
-    "editComponents/edittreemenu.html",
-    "editComponents/compile.html",
-    "editComponents/phase.html",
-    "editComponents/draft.html"
-  ],
   "compilers": [
     {
       "type": "Html",
