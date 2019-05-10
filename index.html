@@ -1,42 +1,33 @@
 <div class="container">
 	<h1>Welcome to Threax Software</h1>
 	<p>My name is Andrew Piper. I have many projects, some are open source and others are intended to be in the future.</p>
-	<h2>For Everyone</h2>
-	<div class="row">
-		<div class="col-md-4">
-			<h3>Anomalous Medical</h3>
-			<p>Anomalous Medical is a 3d human anatomy simulation program. It features stunning 3d anatomy and an accurate simulation of the movement of the mandible.</p>
-			<p>For more information see <a href="https://www.anomalousmedical.com">www.anomalousmedical.com</a>.</p></div>
-		<div class="col-md-4">
-			<h3>Private Computing</h3>
-			<p>It seems like no matter where you turn these days someone, somewhere is trying to collect your data. It has become almost impossible to take notes or even turn on your lights without someone trying to get a peek. This project is an attempt to claw back some privacy in things that you can control. It has amazing features, such as data actually being deleted when you press the delete button.</p>
-			<p>I have made apps for home automation, voice recognition using a Kinect, note taking, shopping lists, budgeting and file access. User management is handled by the Threax.IdServer project. These apps can be deployed in a variety of ways. There is a reference server setup using Docker on Linux, but Windows and IIS also works great.</p>
-			<p>This project is still in the early stages and has not been open sourced, but it is created with the open source Threax Hypermedia Framework described below.</p></div>
-		<div class="col-md-4">
-			<h3>Edity McEditface</h3>
-			<p>Edity McEditface is a silly name for a different kind of CMS. A variety of questions were asked such as, what could a cms look like if it allowed you to separate the editing and administration components? Could you make it harder to hack by only running the administrator side on your local machine? Can you make it higher performance by precompiling the websites and just serving up static files? Would serving up static files give extreme flexibility in deployment possibilities? Could you still provide dynamic page content by creating microservices and interacting with them using client side code? Can git be used even by non programmers to handle versioning and branching while working on content? Finally can all this be provided with a user friendly UI that works like other common CMS systems?</p>
-			<p>The answer to these questions is yes and the results are awesome. Both this website and Anomalous Medical&#39;s were created with this tool and are hosted on github for free.</p>
-			<p>Check out the <a href="/EdityMcEditface/">documentation</a> or&nbsp;the <a href="https://github.com/threax/EdityMcEditface">official repository</a> for more information.</p></div></div>
-	<h2>For Developers</h2>
-	<div class="row">
-		<div class="col-md-4">
-			<h3>Hypermedia Based Microservices Architecture</h3>
-			<p>I have developed an architecture that allows for rapid development of microservices/microapps. It is based around a centralized identity service that utilizes Open ID Connect. This allows both human users and applications to log into the various services that are deployed. From this core any services needed such as sending e-mails or loading data from external sources can be developed. Finally applications can be built that utilizes the core. These concepts are language independent, but I have created a practical implementation using ASP.Net Core MVC.</p>
-			<p>Check out the <a href="/HypermediaDocs">documentation</a> for more information.</p></div>
-		<div class="col-md-4">
-			<h3>Threax Hypermedia Framework</h3>
-			<p>The Threax Hypermedia Framework is a collection of libraries and services that help to build microservices/microapps using ASP.Net Core, Entity Framework Core and a flexible database back end. Apps are built using a HATEOAS architecture that uses apis for all major interactions with the data. On the client side there are reusable widgets to handle common scenerios such as CRUD tables. These widgets can adapt themselves to the current user by looking at the available hypermedia links and machine readable documentation that comes from the apis. This utilizes HtmlRapier, but other front end frameworks could be used. There is also a model generator that can take the definition of some data and generate the basic classes needed to make that model work. From there it can be customized to suit the application&#39;s needs. Finally to simplify client generation clients can be generated from the api in c#, typescript and php.</p>
-			<p>Check out the <a href="/HypermediaDocs">documentation</a> for more information.</p></div>
-		<div class="col-md-4">
-			<h3>HtmlRapier</h3>
-			<p>HtmlRapier is a lightweight web front end framework written in typescript. This library has 3 major control types, views, forms and toggles. Views provide a display area for a particular set of data based on templates written into the html. These templates can have basic if statements and foreach loops. Forms provide read/write access to data. They can either be generated from a json schema, written directly into the html or a combination of the two. Toggles make it possible to alter the current classes, styles and disabled status of HtmlElements. This allows the code side to focus on the toggle status and the html side to define what the status actually looks like. By default there is a toggle with on and off states, but it is possible to define any custom states that might be desired. All of this is tied together with controller classes that can subscribe to html events on the HtmlElements on the page. There is also a dependency injection system that is based on funciton prototypes instead of strings. In typescript this nicely simulates the type based dependency injection in c#.</p>
-			<p>Check out the <a href="/HtmlRapierDocs">documentation</a> and <a href="https://github.com/threax/HtmlRapier">official repository</a> for more information.</p></div></div>
-	<div class="row">
-		<div class="col-md-4">
-			<h3>Threax.IdServer</h3>
-			<p>This is a reference implementation of the identity management microservice. It uses IdentityServer4 to provide Open ID Connect capabilities, which is used to log into the individual apps. This version comes with user types for both internally defined users in the id server and applications. Either of these can log in in a unified way to individual apps, which greatly simplifies user management. This project also has an app dashboard that is used to define the applications in the id server using metadata from the deployed apps.</p>
-			<p>Check out the <a href="https://github.com/threax/Threax.IdServer">official repository</a> for more information.</p></div>
-		<div class="col-md-4">
-			<h3>Threax.AspNetCore.Template</h3>
-			<p>This template is the basic implementation of an app in this architecture. It shows all the major features of the architecture and can be modified to build real applications. The HATEOAS apis drive the front end, customizing it to the current user&#39;s needs and permissions. Users are managed with the Identity Server, which the app will connect to using the client generated from the id server. Finally the model generator is installed, which can be used to add new data and remove the built in example data. This template allows for rapid prototyping of apps by reusing as much code as possible, but each component can be customized as much as needed to deliver the desired functionality.</p>
-			<p>Check out the <a href="https://github.com/threax/Threax.AspNetCore.Template">official repository</a> for more information.</p></div></div></div>
+	<div class="jumbotron">
+		<h1>Anomalous Medical</h1>
+		<p>Anomalous Medical is a 3d human anatomy simulation program. It features stunning 3d anatomy and an accurate simulation of the movement of the mandible.</p>
+		<p><a class="btn btn-primary btn-lg" href="https://www.anomalousmedical.com" role="button">Learn more</a></p></div>
+	<div class="jumbotron">
+		<h1>Private Computing</h1>
+		<p>It seems like no matter where you turn these days someone, somewhere is trying to collect your data. It has become almost impossible to take notes or even turn on your lights without someone trying to get a peek. This project is an attempt to claw back some privacy in things that you can control. It has amazing features, such as data actually being deleted when you press the delete button.</p>
+		<p>I have made apps for home automation, voice recognition using a Kinect, note taking, shopping lists, budgeting and file access. User management is handled by the Threax.IdServer project. These apps can be deployed in a variety of ways. There is a reference server setup using Docker on Linux, but Windows and IIS also works great.</p>
+		<p>This project is still in the early stages and has not been open sourced, but it is created with the open source Threax Hypermedia Framework described below.</p></div>
+	<div class="jumbotron">
+		<h1>Edity McEditface</h1>
+		<p>Edity McEditface is a silly name for a different kind of CMS. I threw away the common assumptions for these systems, which typically involve a web application serving up pages, which can lead to security issues and hackers trying to exploit them. The sites created with this app are just static content files that are easy to host anywhere. Changes and edits are tracked using Git and you can even publish to a separate Git repository. You can run it either as a local application or host it on a server depending on your needs.</p>
+		<p>Both this website and Anomalous Medical&#39;s were created with this tool and are hosted on github for free.</p>
+		<p><a class="btn btn-primary btn-lg" href="/EdityMcEditface" role="button">Learn more</a></p></div>
+	<div class="jumbotron">
+		<h1>Threax Hypermedia Framework</h1>
+		<p>The Threax Hypermedia Framework is a collection of libraries and services that help to build microservices/microapps based on HATEOAS&nbsp;using ASP.Net Core. This uses a centralized identity server for user management and interapp communication. It also features a large amount of automation to build models, clients and even user interfaces.</p>
+		<p><a class="btn btn-primary btn-lg" href="/HypermediaDocs" role="button">Learn more</a></p></div>
+	<div class="jumbotron">
+		<h1>HtmlRapier</h1>
+		<p>HtmlRapier is a lightweight web front end framework written in typescript. This library has 3 major control types: views, forms and toggles. Views provide a display area for a particular set of data based on templates written into the html. Forms provide read/write access to data. Toggles make it possible to alter the current classes, styles and disabled status of HtmlElements. All of this is tied together with controller classes that can subscribe to html events. There is also a dependency injection system that is based on function prototypes instead of strings. This can be used to build front end code that keeps the developer in control with a high amount of component reusability.</p>
+		<p><a class="btn btn-primary btn-lg" href="/HtmlRapierDocs" role="button">Learn more</a></p></div>
+	<div class="jumbotron">
+		<h1>Threax.IdServer</h1>
+		<p>This is a reference implementation of the identity management microservice. It uses IdentityServer4 to provide Open ID Connect capabilities, which is used to log into the individual apps. This version comes with user types for both internally defined users in the id server and applications. Either of these can log in in a unified way to individual apps, which greatly simplifies user management. This project also has an app dashboard that is used to define the applications in the id server using metadata from the deployed apps.</p>
+		<p><a class="btn btn-primary btn-lg" href="https://github.com/threax/Threax.IdServer" role="button">Learn more</a></p></div>
+	<div class="jumbotron">
+		<h1>Threax.AspNetCore.Template</h1>
+		<p>This template is the basic implementation of an app in my architecture. It shows off the major features and can be modified to build real applications. The HATEOAS apis drive the front end, customizing it to the current user&#39;s needs and permissions. Users are managed with the Identity Server, which the app will connect to using the client generated from the id server. Finally the model generator is installed, which can be used to add new data and remove the built in example data. This template allows for rapid prototyping of apps by reusing as much code as possible, however, each component can be customized as much as needed to deliver the desired functionality.</p>
+		<p><a class="btn btn-primary btn-lg" href="https://github.com/threax/Threax.AspNetCore.Template" role="button">Learn more</a></p></div></div>
