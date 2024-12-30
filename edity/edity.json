@@ -6,6 +6,9 @@
   "contentMap": {
 
   },
+  "additionalContent": [
+    "Images"
+  ],
   "compilers": [
     {
       "type": "Html",
